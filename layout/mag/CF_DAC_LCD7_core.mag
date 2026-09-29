@@ -1,0 +1,88 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 0
+<< metal1 >>
+rect 98815 16043 99000 16095
+rect 98802 14883 99000 14935
+rect 74755 0 74783 58
+rect 74823 0 74851 58
+rect 74891 0 74919 58
+rect 74959 0 74987 58
+rect 75027 0 75055 58
+rect 98817 14006 99000 14058
+rect 98816 15012 99000 15064
+rect 98805 14694 99000 14810
+rect 98804 17483 99000 17535
+rect 98817 14135 99000 14187
+rect 98815 13492 99000 13544
+rect 98819 16689 99000 16741
+rect 98819 16817 99000 16869
+rect 98809 15141 99000 15193
+rect 98809 15270 99000 15322
+rect 98809 15399 99000 15451
+rect 98809 15527 99000 15579
+rect 98809 15655 99000 15707
+rect 98801 15784 99000 15836
+rect 98805 15912 99000 15964
+<< metal2 >>
+rect 98805 14515 99000 14567
+rect 98720 16239 99000 16539
+rect 98804 17187 99000 17443
+rect 98814 14288 99000 14340
+<< labels >>
+rlabel metal2 s 98805 14515 99000 14567 4 vpwr_lv_int
+port 1 nsew
+rlabel metal1 s 98815 16043 99000 16095 4 continuous_drive
+port 2 nsew
+rlabel metal1 s 98802 14883 99000 14935 4 holdb
+port 3 nsew
+rlabel metal1 s 74755 0 74783 58 4 v4
+port 4 nsew
+rlabel metal1 s 74823 0 74851 58 4 v3
+port 5 nsew
+rlabel metal1 s 74891 0 74919 58 4 v2
+port 6 nsew
+rlabel metal1 s 74959 0 74987 58 4 v1
+port 7 nsew
+rlabel metal1 s 75027 0 75055 58 4 v0
+port 8 nsew
+rlabel metal1 s 98817 14006 99000 14058 4 pwrdn
+port 9 nsew
+rlabel metal1 s 98816 15012 99000 15064 4 vpwr_ao
+port 10 nsew
+rlabel metal1 s 98805 14694 99000 14810 4 vpb_hv
+port 11 nsew
+rlabel metal2 s 98720 16239 99000 16539 4 vpwr_hv
+port 12 nsew
+rlabel metal1 s 98804 17483 99000 17535 4 vnb
+port 13 nsew
+rlabel metal2 s 98804 17187 99000 17443 4 vgnd
+port 14 nsew
+rlabel metal1 s 98817 14135 99000 14187 4 vpb_lv
+port 15 nsew
+rlabel metal1 s 98815 13492 99000 13544 4 enable_hv
+port 16 nsew
+rlabel metal1 s 98819 16689 99000 16741 4 lcd_bias_select[0]
+port 17 nsew
+rlabel metal1 s 98819 16817 99000 16869 4 lcd_bias_select[1]
+port 18 nsew
+rlabel metal1 s 98809 15141 99000 15193 4 d[6]
+port 19 nsew
+rlabel metal1 s 98809 15270 99000 15322 4 d[5]
+port 20 nsew
+rlabel metal1 s 98809 15399 99000 15451 4 d[4]
+port 21 nsew
+rlabel metal1 s 98809 15527 99000 15579 4 d[3]
+port 22 nsew
+rlabel metal1 s 98809 15655 99000 15707 4 d[2]
+port 23 nsew
+rlabel metal1 s 98801 15784 99000 15836 4 d[1]
+port 24 nsew
+rlabel metal2 s 98814 14288 99000 14340 4 vpwr_lv
+port 25 nsew
+rlabel metal1 s 98805 15912 99000 15964 4 d[0]
+port 26 nsew
+<< properties >>
+string FIXED_BBOX 0 0 99000 17611
+<< end >>

@@ -1,0 +1,286 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO CF_DAC_LCD7
+  CLASS BLOCK ;
+  ORIGIN 0 0 ;
+  FOREIGN CF_DAC_LCD7 0 0 ;
+  SIZE 525 BY 118.055 ;
+  PIN vpwr_lv_int
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 509.025 87.575 525 87.835 ;
+    END
+  END vpwr_lv_int
+  PIN continuous_drive
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 509.075 95.215 525 95.475 ;
+    END
+  END continuous_drive
+  PIN holdb
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 509.01 89.415 525 89.675 ;
+    END
+  END holdb
+  PIN v4
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 388.775 0 388.915 15.29 ;
+    END
+  END v4
+  PIN v3
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 389.115 0 389.255 15.29 ;
+    END
+  END v3
+  PIN v2
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 389.455 0 389.595 15.29 ;
+    END
+  END v2
+  PIN v1
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 389.795 0 389.935 15.29 ;
+    END
+  END v1
+  PIN v0
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 390.135 0 390.275 15.29 ;
+    END
+  END v0
+  PIN pwrdn
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 509.085 85.03 525 85.29 ;
+    END
+  END pwrdn
+  PIN vpwr_ao
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 509.08 90.06 525 90.32 ;
+    END
+  END vpwr_ao
+  PIN vpwr_hv
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 508.6 96.195 525 97.695 ;
+    END
+  END vpwr_hv
+  PIN vgnd
+    DIRECTION INPUT ;
+    USE GROUND ;
+    PORT
+      LAYER met1 ;
+        RECT 509.02 102.415 510 102.675 ;
+      LAYER met2 ;
+        RECT 509.27 102.415 509.75 106.655 ;
+        RECT 509.02 100.935 510 102.215 ;
+        RECT 509.27 100.935 509.75 106.655 ;
+      LAYER met3 ;
+        RECT 1.23 103.555 523.77 106.655 ;
+      LAYER met4 ;
+        RECT 20 0 23.1 118.055 ;
+        RECT 50 0 53.1 118.055 ;
+        RECT 80 0 83.1 118.055 ;
+        RECT 110 0 113.1 118.055 ;
+        RECT 140 0 143.1 118.055 ;
+        RECT 170 0 173.1 118.055 ;
+        RECT 200 0 203.1 118.055 ;
+        RECT 230 0 233.1 118.055 ;
+        RECT 260 0 263.1 118.055 ;
+        RECT 290 0 293.1 118.055 ;
+        RECT 320 0 323.1 118.055 ;
+        RECT 350 0 353.1 118.055 ;
+        RECT 380 0 383.1 118.055 ;
+        RECT 410 0 413.1 118.055 ;
+        RECT 440 0 443.1 118.055 ;
+        RECT 470 0 473.1 118.055 ;
+        RECT 500 0 503.1 118.055 ;
+    END
+  END vgnd
+  PIN enable_hv
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 509.075 82.46 525 82.72 ;
+    END
+  END enable_hv
+  PIN lcd_bias_select[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 509.095 98.445 525 98.705 ;
+    END
+  END lcd_bias_select[0]
+  PIN lcd_bias_select[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 509.095 99.085 525 99.345 ;
+    END
+  END lcd_bias_select[1]
+  PIN d[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 509.045 90.705 525 90.965 ;
+    END
+  END d[6]
+  PIN d[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 509.045 91.35 525 91.61 ;
+    END
+  END d[5]
+  PIN d[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 509.045 91.995 525 92.255 ;
+    END
+  END d[4]
+  PIN d[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 509.045 92.635 525 92.895 ;
+    END
+  END d[3]
+  PIN d[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 509.045 93.275 525 93.535 ;
+    END
+  END d[2]
+  PIN d[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 509.005 93.92 525 94.18 ;
+    END
+  END d[1]
+  PIN vpwr
+    DIRECTION INPUT ;
+    USE POWER ;
+    PORT
+      LAYER met1 ;
+        RECT 509.085 85.675 510 85.935 ;
+      LAYER met2 ;
+        RECT 509.085 84.895 510 85.935 ;
+      LAYER met3 ;
+        RECT 509.085 84.895 516.79 85.375 ;
+      LAYER met2 ;
+        RECT 509.07 86.44 510 86.7 ;
+        RECT 509.07 85.66 510 86.7 ;
+      LAYER met3 ;
+        RECT 509.07 85.66 516.79 86.14 ;
+        RECT 1.23 108.355 523.77 111.455 ;
+      LAYER met4 ;
+        RECT 5 0 8.1 118.055 ;
+        RECT 35 0 38.1 118.055 ;
+        RECT 65 0 68.1 118.055 ;
+        RECT 95 0 98.1 118.055 ;
+        RECT 125 0 128.1 118.055 ;
+        RECT 155 0 158.1 118.055 ;
+        RECT 185 0 188.1 118.055 ;
+        RECT 215 0 218.1 118.055 ;
+        RECT 245 0 248.1 118.055 ;
+        RECT 275 0 278.1 118.055 ;
+        RECT 305 0 308.1 118.055 ;
+        RECT 335 0 338.1 118.055 ;
+        RECT 365 0 368.1 118.055 ;
+        RECT 395 0 398.1 118.055 ;
+        RECT 425 0 428.1 118.055 ;
+        RECT 455 0 458.1 118.055 ;
+        RECT 485 0 488.1 118.055 ;
+        RECT 515 0 518.1 118.055 ;
+    END
+  END vpwr
+  PIN d[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 509.025 94.56 525 94.82 ;
+    END
+  END d[0]
+  OBS
+    LAYER li1 ;
+      RECT 0 0 525 118.055 ;
+    LAYER met1 ;
+      RECT 0 0 15 118.055 ;
+      RECT 510 0 525 82.46 ;
+      RECT 510 82.72 525 85.03 ;
+      RECT 510 85.29 525 89.415 ;
+      RECT 510 89.675 525 90.06 ;
+      RECT 510 90.32 525 90.705 ;
+      RECT 510 90.965 525 91.35 ;
+      RECT 510 91.61 525 91.995 ;
+      RECT 510 92.255 525 92.635 ;
+      RECT 510 92.895 525 93.275 ;
+      RECT 510 93.535 525 93.92 ;
+      RECT 510 94.18 525 94.56 ;
+      RECT 510 94.82 525 95.215 ;
+      RECT 510 95.475 525 98.445 ;
+      RECT 510 98.705 525 99.085 ;
+      RECT 510 99.345 525 118.055 ;
+      RECT 15 0 388.775 15 ;
+      RECT 388.915 0 389.115 15 ;
+      RECT 389.255 0 389.455 15 ;
+      RECT 389.595 0 389.795 15 ;
+      RECT 389.935 0 390.135 15 ;
+      RECT 390.275 0 510 15 ;
+      RECT 15 103.055 510 118.055 ;
+    LAYER met2 ;
+      RECT 0 0 15 118.055 ;
+      RECT 510 0 525 87.575 ;
+      RECT 510 87.835 525 96.195 ;
+      RECT 510 97.695 525 118.055 ;
+      RECT 15 0 510 15 ;
+      RECT 15 103.055 509.27 118.055 ;
+      RECT 509.27 106.655 509.75 118.055 ;
+      RECT 509.75 103.055 510 118.055 ;
+  END
+END CF_DAC_LCD7
+
+END LIBRARY
